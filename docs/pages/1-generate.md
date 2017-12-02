@@ -70,6 +70,14 @@ and from it you can build your Docker image.  We don't build the image within th
 container for the explicit purpose that you should keep a copy of the recipe
 Dockerfile at hand. The basic usage is to run the image, and you can either build, test, or list.
 
+To be sure you have the latest builder image
+
+```
+$ docker pull vanessa/expfactory-builder
+```
+
+Then
+
 ```
 $ docker run vanessa/expfactory-builder
 
