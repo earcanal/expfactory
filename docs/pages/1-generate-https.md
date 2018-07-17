@@ -158,8 +158,8 @@ docker run hello-world
 ```
 
 ### Test Nginx
-When you install nginx with `apt-get`, this install typically starts the nginx server (note
-this is pronounced ENGINE-X - it took me only 8 years to know that :P). As a sanity check, if you go to the web interface (the domain address that is associated with the droplet) you will see this.
+
+The Experiment Factory uses the nginx web server.  We run nginx *outside* of a container to generate the certificates required to run nginx (inside our container) over SSL. When you install nginx with `apt-get`, this install typically starts the nginx server (note this is pronounced ENGINE-X - it took me only 8 years to know that :P). As a sanity check, if you go to the web interface (the domain address that is associated with the droplet) you will see this.
 
 ![/expfactory/img/https/droplet-nginx.png](/expfactory/img/https/droplet-nginx.png)
 
